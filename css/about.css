@@ -176,7 +176,7 @@
   header.masthead {
     text-align: center;
     color: black;
-    background-image: url("../img/about-bg.png");
+    background-image: url("../img/about/about-bg.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
