@@ -72,19 +72,19 @@
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <button onclick="myFunction1()" style="border: none; background-color: white;"><img src="img/Career/canada.png" style="max-width: 100%;"></button>
+            <button id="button" onclick="myFunction1()" style="border: none; background-color: white;"><img src="img/Career/canada.png" style="max-width: 100%;"></button>
           </span>
           
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-             <button onclick="myFunction2()" style="border: none; background-color: white;"><img src="img/Career/america.png" style="max-width: 100%"></button>
+             <button id="button" onclick="myFunction2()" style="border: none; background-color: white;"><img src="img/Career/america.png" style="max-width: 100%"></button>
             </span>
           
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-              <button onclick="myFunction3()" style="border: none; background-color: white;"><img src="img/Career/china.png" style="max-width: 100%"></button>
+              <button id="button" onclick="myFunction3()" style="border: none; background-color: white;"><img src="img/Career/china.png" style="max-width: 100%"></button>
             </span>
           
         </div>
@@ -118,7 +118,7 @@
     </div>
 
     <div id="amID">
-            <h1 style="font-weight: 400;">HR</h1>
+            <h1 style="font-weight: 400;">Test2</h1>
 
            <p>We are a FinTech Company, hiring for our Toronto office based near the Airport. We are looking for an individual with 3-5 years of Public Relations experience to join our team to assist with managing PR News Release, Media relationship.</p>
             <br>
@@ -226,28 +226,46 @@
 <script>
 function myFunction1() {
   var x = document.getElementById("canID");
+  var y = document.getElementById("amID");
+  var z = document.getElementById("chinID");
   if (x.style.display === "none") {
     x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "none";
   } else {
     x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "none";
   }
 }
 
 function myFunction2() {
   var x = document.getElementById("canID");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  var y = document.getElementById("amID");
+  var z = document.getElementById("chinID");
+  if (y.style.display === "none") {
+    y.style.display = "block";
     x.style.display = "none";
+    z.style.display = "none";
+  } else {
+    y.style.display = "none";
+    x.style.display = "none";
+    z.style.display = "none";
   }
 }
 
 function myFunction3() {
-  var x = document.getElementById("chinID");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+  var x = document.getElementById("canID");
+  var y = document.getElementById("amID");
+  var z = document.getElementById("chinID");
+  if (z.style.display === "none") {
+    z.style.display = "block";
     x.style.display = "none";
+    y.style.display = "none";
+  } else {
+    z.style.display = "none";
+    x.style.display = "none";
+    y.style.display = "none";
   }
 }
 </script>

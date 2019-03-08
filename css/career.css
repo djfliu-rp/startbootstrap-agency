@@ -736,3 +736,7 @@
     font-weight: 300;
     display: none;
 }
+
+#button:focus { 
+    outline: 0;
+}
