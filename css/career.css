@@ -706,3 +706,33 @@
     border: 0.5px grey solid;
   }
 
+.fa-stack { 
+    display: inline;
+}
+
+#canID { 
+    width: 100%;
+    padding: 50px 50px;
+    background-color: #F3F3F3;
+    margin-top: 20px;
+    font-weight: 300;
+    display: none;
+}
+
+#amID { 
+    width: 100%;
+    padding: 50px 50px;
+    background-color: #F3F3F3;
+    margin-top: 20px;
+    font-weight: 300;
+    display: none;
+}
+
+#chinID { 
+    width: 100%;
+    padding: 50px 50px;
+    background-color: #F3F3F3;
+    margin-top: 20px;
+    font-weight: 300;
+    display: none;
+}
