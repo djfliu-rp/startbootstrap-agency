@@ -593,8 +593,7 @@
   }
   
   section#contact {
-    background-color: #212529;
-    background-image: url("../img/map-image.png");
+    background-image: url("../img/contact/image.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -716,4 +715,8 @@
 
 .contact-card-img{
     height: 17rem;
+}
+
+.input-bg{
+    background-color: lightgray;
 }
