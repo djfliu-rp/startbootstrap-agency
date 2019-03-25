@@ -220,11 +220,7 @@
 
   }
 
-  @media (min-width: 320px) {
-    header.masthead { 
-      width: 420px;
-    }
-  }
+ 
   
   @media (min-width: 768px) {
     header.masthead .intro-text {
