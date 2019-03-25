@@ -73,35 +73,39 @@
 
   <!-- Services -->
   <section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Open Positions</h2>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading text-uppercase">Open Positions</h2>
+              </div>
+          </div>
+  
+        <div class="row text-center">
+          <div class="col-md-4">
+              <div class="team-member" id="canpic">
+              <button id="button" onclick="myFunction1()" style="border: none; background-color: white;">
+                <img class="mx-auto rounded-circle" src="img/Career/canada.png">
+              </button>
             </div>
+          </div>
+          <div class="col-md-4">
+              <div class="team-member" id="ampic">
+               <button id="button" onclick="myFunction2()" style="border: none; background-color: white;">
+                <img class="mx-auto rounded-circle" src="img/Career/america.png">
+              </button>
+            </div>
+            
+          </div>
+          <div class="col-md-4">
+              <div class="team-member" id="chinpic">
+                <button id="button" onclick="myFunction3()" style="border: none; background-color: white;">
+                  <img class="mx-auto rounded-circle" src="img/Career/china.png">
+                </button>
+              </div>
+            
+          </div>
         </div>
-
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <button id="button" onclick="myFunction1()" style="border: none; background-color: white;">
-              <img class="img-fluid d-block mx-auto rounded-circle z-depth-2" src="img/Career/canada.png"></button>
-          </span>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-             <button id="button" onclick="myFunction2()" style="border: none; background-color: white;">
-              <img class="img-fluid d-block mx-auto rounded-circle z-depth-2" src="img/Career/america.png"></button>
-            </span>
-          
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-              <button id="button" onclick="myFunction3()" style="border: none; background-color: white;">
-                <img class="img-fluid d-block mx-auto rounded-circle z-depth-2" src="img/Career/china.png"></button>
-            </span>
-          
-        </div>
-      </div>
+      
 
     <div id="canID">
             <h1 style="font-weight: 400;">PR</h1>
@@ -158,7 +162,6 @@
 
     <div id="chinID">
         There are no job postings at the moment, please visit this page again at another time.
-    </div>
     </div>
   </section>
 
@@ -233,6 +236,37 @@ function myFunction3() {
     x.style.display = "none";
     y.style.display = "none";
   }
+}
+
+
+if ($(window).width() < 480 || $(window).height() < 480) {
+    //small screen, load other JS files
+    $.getScript('/js/script.js', function () {
+
+      function myFunction1() {
+      var xc = document.getElementById("canID");
+      var yc = document.getElementById("amID");
+      var zc = document.getElementById("chinID");
+      var xh = document.getElementByID("canpic");
+      var yh = document.getElementByID("ampic");
+      var zh = document.getElementByID("chinpic");
+      if (xc.style.display === "none") {
+       xc.style.display = "block";
+       yc.style.display = "none";
+       zc.style.display = "none";
+       yh.style.display = "none";
+       zh.style.display = "none";
+      } else {
+       xc.style.display = "none";
+       yc.style.display = "none";
+       zc.style.display = "none";
+       yh.style.display = "none";
+       zh.style.display = "none";
+      }
+    }
+      
+        //the script has been added to the DOM, you can now use it's code
+    });
 }
 </script>
 
