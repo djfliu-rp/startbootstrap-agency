@@ -107,7 +107,7 @@
         </div>
       
 
-    <div id="canID">
+    <div id="canID" style="display: none;">
             <h1 style="font-weight: 400;">PR</h1>
 
            <p>We are a FinTech Company, hiring for our Toronto office based near the Airport. We are looking for an individual with 3-5 years of Public Relations experience to join our team to assist with managing PR News Release, Media relationship.</p>
@@ -134,7 +134,7 @@
 
     </div>
 
-    <div id="amID">
+    <div id="amID" style="display: none;">
             <h1 style="font-weight: 400;">Test2</h1>
 
            <p>We are a FinTech Company, hiring for our Toronto office based near the Airport. We are looking for an individual with 3-5 years of Public Relations experience to join our team to assist with managing PR News Release, Media relationship.</p>
@@ -160,7 +160,7 @@
             <a href="mailto:info@riverpayment.com?Subject=Job%20Application" target="_top" style="text-align: center; color: black; display: block; padding-top: 2em; text-decoration: underline;">Email us your application</a>
             </div>
 
-    <div id="chinID">
+    <div id="chinID" style="display: none;">
         There are no job postings at the moment, please visit this page again at another time.
     </div>
   </section>
@@ -251,6 +251,7 @@ if ($(window).width() < 480 || $(window).height() < 480) {
       var yh = document.getElementByID("ampic");
       var zh = document.getElementByID("chinpic");
       if (xc.style.display === "none") {
+       xh.style.display = "block";
        xc.style.display = "block";
        yc.style.display = "none";
        zc.style.display = "none";
@@ -260,12 +261,29 @@ if ($(window).width() < 480 || $(window).height() < 480) {
        xc.style.display = "none";
        yc.style.display = "none";
        zc.style.display = "none";
-       yh.style.display = "none";
+      }
+    }
+
+    function myFunction2() {
+      var xc = document.getElementById("canID");
+      var yc = document.getElementById("amID");
+      var zc = document.getElementById("chinID");
+      var xh = document.getElementByID("canpic");
+      var yh = document.getElementByID("ampic");
+      var zh = document.getElementByID("chinpic");
+      if (yc.style.display === "none") {
+       yc.style.display = "block";
+       xc.style.display = "none";
+       zc.style.display = "none";
        zh.style.display = "none";
+      } else {
+       yc.style.display = "none";
+       xc.style.display = "none";
+       zc.style.display = "none";
       }
     }
       
-        //the script has been added to the DOM, you can now use it's code
+        //the script has been added to the DOM, you can now use its code
     });
 }
 </script>
