@@ -176,7 +176,7 @@
   header.masthead {
     text-align: center;
     color: black;
-    background-image: url("../img/Career/Desktop.png");
+    background-image: url("../img/Career/Desktop.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -739,3 +739,4 @@
 #button:focus { 
     outline: 0;
 }
+
