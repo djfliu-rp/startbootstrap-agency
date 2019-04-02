@@ -192,7 +192,7 @@
   header.masthead {
     text-align: center;
     color: black;
-    background-image: url("../img/media-bg.png");
+    background-image: url("../img/media-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -219,6 +219,8 @@
     font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   }
+
+ 
   
   @media (min-width: 768px) {
     header.masthead .intro-text {
