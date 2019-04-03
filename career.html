@@ -83,14 +83,14 @@
         <div class="row text-center">
           <div class="col-md-4">
               <div class="team-member">
-              <button id="button" onclick="myFunction1()" style="border: none; background-color: white;">
+              <button id="button1" onclick="myFunction1()" style="border: none; background-color: white; outline: none;">
                 <img class="mx-auto rounded-circle" src="img/Career/canada.png">
               </button>
             </div>
           </div>
           <div class="col-md-4">
               <div class="team-member">
-               <button id="button" onclick="myFunction2()" style="border: none; background-color: white;">
+               <button id="button2" onclick="myFunction2()" style="border: none; background-color: white; outline: none;">
                 <img class="mx-auto rounded-circle" src="img/Career/america.png">
               </button>
             </div>
@@ -98,7 +98,7 @@
           </div>
           <div class="col-md-4">
               <div class="team-member">
-                <button id="button" onclick="myFunction3()" style="border: none; background-color: white;">
+                <button id="button3" onclick="myFunction3()" style="border: none; background-color: white; outline: none;">
                   <img class="mx-auto rounded-circle" src="img/Career/china.png">
                 </button>
               </div>
@@ -193,10 +193,12 @@
   <script src="js/agency.min.js"></script>
 
 <script>
-function myFunction1() {
   var x = document.getElementById("canID");
   var y = document.getElementById("amID");
   var z = document.getElementById("chinID");
+
+function myFunction1() {
+  
   if (x.style.display === "none") {
     x.style.display = "block";
     y.style.display = "none";
@@ -209,9 +211,7 @@ function myFunction1() {
 }
 
 function myFunction2() {
-  var x = document.getElementById("canID");
-  var y = document.getElementById("amID");
-  var z = document.getElementById("chinID");
+  
   if (y.style.display === "none") {
     y.style.display = "block";
     x.style.display = "none";
@@ -224,9 +224,7 @@ function myFunction2() {
 }
 
 function myFunction3() {
-  var x = document.getElementById("canID");
-  var y = document.getElementById("amID");
-  var z = document.getElementById("chinID");
+ 
   if (z.style.display === "none") {
     z.style.display = "block";
     x.style.display = "none";
@@ -238,7 +236,53 @@ function myFunction3() {
   }
 }
 
+if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    // some code..
+    function myFunction1() {
+     if (x.style.display === "none") {
+      x.style.display = "block";
+      x.style.marginTop = "-40%";
+      y.style.display = "none";
+      z.style.display = "none";
+      button2.style.display = "none";
+      button3.style.display = "none";
+   } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "none";
+      button2.style.display = "inline";
+      button3.style.display = "inline";
+   }
+  }
+  function myFunction2() {
+     if (y.style.display === "none") {
+      y.style.display = "block";
+      y.style.marginTop = "-25%";
+      x.style.display = "none";
+      z.style.display = "none";
+      button3.style.display = "none";
+   } else {
+      x.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "none";
+      button3.style.display = "inline";
+   }
+  }
 
+  function myFunction3() {
+ 
+  if (z.style.display === "none") {
+    z.style.display = "block";
+    z.style.marginTop = "-12%";
+    x.style.display = "none";
+    y.style.display = "none";
+  } else {
+    z.style.display = "none";
+    x.style.display = "none";
+    y.style.display = "none";
+  }
+  }
+}
 
 </script>
 
