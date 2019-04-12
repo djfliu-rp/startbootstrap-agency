@@ -8,10 +8,7 @@
     overflow-x: hidden;
     font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   }
-.column1 { 
-  border: none;
-  border-left: thick solid #ff0000;
-}
+
   .partner { 
     margin: auto;
     display: block;
@@ -23,11 +20,11 @@
   }
   
   a {
-    color: black;
+    color: #fed136;
   }
   
   a:hover {
-    color: blue;
+    color: #fec503;
   }
   
   .text-primary {

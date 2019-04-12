@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Browse the vacancies we are currently recruiting to find a great fit; we are growing our teams in the United States, Canada and China">
   <meta name="author" content="">
-  <meta name="keywords" content="riverpay, jobs, roles, positions, vacancies, talents, recruitment, human resources, team development, the UK ">
+  <meta name="keywords" content="riverpay, jobs, roles, positions, vacancies, talents, recruitment, human resources, team development, the UK, london, england, london england">
 
   <title>RiverPay is always looking for new talents to expand our team</title>
 
@@ -168,7 +168,13 @@
             <a href="mailto:info@riverpayment.com?Subject=Job%20Application" target="_top" style="text-align: center; color: black; display: block; padding-top: 2em; text-decoration: underline;">Email us your application</a>
             </div>
 
+    <div id="ukID" style="display: none;">
+        this is NOT chinaid <br><br>
+        There are no job postings at the moment, please visit this page again at another time.
+    </div>
+
     <div id="chinID" style="display: none;">
+        china<br><br>
         There are no job postings at the moment, please visit this page again at another time.
     </div>
   </section>
@@ -204,6 +210,7 @@
   var x = document.getElementById("canID");
   var y = document.getElementById("amID");
   var z = document.getElementById("chinID");
+  var u = document.getElementById("ukID");
 
 function myFunction1() {
   
@@ -211,10 +218,12 @@ function myFunction1() {
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "none";
+    u.style.display = "none";
   } else {
     x.style.display = "none";
     y.style.display = "none";
     z.style.display = "none";
+    u.style.display = "none";
   }
 }
 
@@ -224,24 +233,43 @@ function myFunction2() {
     y.style.display = "block";
     x.style.display = "none";
     z.style.display = "none";
+    u.style.display = "none";
   } else {
     y.style.display = "none";
     x.style.display = "none";
     z.style.display = "none";
+    u.style.display = "none";
   }
 }
 
 function myFunction3() {
  
-  if (z.style.display === "none") {
-    z.style.display = "block";
+  if (u.style.display === "none") {
+    u.style.display = "block";
     x.style.display = "none";
     y.style.display = "none";
+    z.style.display = "none";
   } else {
     z.style.display = "none";
     x.style.display = "none";
     y.style.display = "none";
+    u.style.display = "none";
   }
+}
+
+function myFunction4() {
+ 
+ if (z.style.display === "none") {
+   z.style.display = "block";
+   x.style.display = "none";
+   y.style.display = "none";
+   u.style.display = "none";
+ } else {
+   z.style.display = "none";
+   x.style.display = "none";
+   y.style.display = "none";
+   u.style.display = "none";
+ }
 }
 
 if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
@@ -254,12 +282,16 @@ if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
       z.style.display = "none";
       button2.style.display = "none";
       button3.style.display = "none";
+      button4.style.display = "none";
+      u.style.display = "none";
    } else {
       x.style.display = "none";
       y.style.display = "none";
       z.style.display = "none";
+      u.style.display = "none";
       button2.style.display = "inline";
       button3.style.display = "inline";
+      button4.style.display = "inline";
    }
   }
   function myFunction2() {
@@ -269,28 +301,53 @@ if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
       x.style.display = "none";
       z.style.display = "none";
       button3.style.display = "none";
+      u.style.display = "none";
+      button4.style.display = "none";
    } else {
       x.style.display = "none";
       y.style.display = "none";
       z.style.display = "none";
+      u.style.display = "none";
       button3.style.display = "inline";
+      buutton4.style.display = "inline";
    }
   }
 
   function myFunction3() {
  
-  if (z.style.display === "none") {
-    z.style.display = "block";
-    z.style.marginTop = "-12%";
+  if (u.style.display === "none") {
+    u.style.display = "block";
+    u.style.marginTop = "-12%";
     x.style.display = "none";
     y.style.display = "none";
+    z.style.display = "none";
+    button4.style.display = "none";
   } else {
     z.style.display = "none";
     x.style.display = "none";
     y.style.display = "none";
+    u.style.display = "none";
+    button4.style.display="inline";
   }
   }
+
+  function myFunction4() {
+ 
+ if (z.style.display === "none") {
+   z.style.display = "block";
+   z.style.marginTop = "1%";
+   x.style.display = "none";
+   y.style.display = "none";
+   u.style.display = "none";
+ } else {
+   z.style.display = "none";
+   x.style.display = "none";
+   y.style.display = "none";
+   u.style.display = "none";
+ }
+ }
 }
+
 
 </script>
 
