@@ -20,11 +20,11 @@
   }
   
   a {
-    color: #fed136;
+    color: black;
   }
   
   a:hover {
-    color: #fec503;
+    color: blue;
   }
   
   .text-primary {
