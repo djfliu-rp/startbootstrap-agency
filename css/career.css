@@ -212,7 +212,7 @@
     }
   }
   @media (min-width: 768px) {
-    headcer.masthead .intro-text {
+    header.masthead .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;
     }
